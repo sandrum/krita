@@ -13,6 +13,7 @@
 #include "kis_gaussian_blur_filter.h"
 #include "kis_motion_blur_filter.h"
 #include "kis_lens_blur_filter.h"
+#include "kis_depth_blur_filter.h"
 #include "filter/kis_filter_registry.h"
 
 K_PLUGIN_FACTORY_WITH_JSON(BlurFilterPluginFactory, "kritablurfilter.json", registerPlugin<BlurFilterPlugin>();)
@@ -24,6 +25,7 @@ BlurFilterPlugin::BlurFilterPlugin(QObject *parent, const QVariantList &)
     KisFilterRegistry::instance()->add(new KisGaussianBlurFilter());
     KisFilterRegistry::instance()->add(new KisMotionBlurFilter());
     KisFilterRegistry::instance()->add(new KisLensBlurFilter());
+    KisFilterRegistry::instance()->add(new KisDepthBlurFilter());
 
 }
 

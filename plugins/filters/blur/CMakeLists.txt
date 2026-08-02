@@ -8,6 +8,8 @@ set(kritablurfilter_SOURCES
     kis_wdg_motion_blur.cpp
     kis_lens_blur_filter.cpp
     kis_wdg_lens_blur.cpp
+    kis_depth_blur_filter.cpp
+    kis_wdg_depth_blur.cpp
     )
 
 ki18n_wrap_ui(kritablurfilter_SOURCES
@@ -15,6 +17,7 @@ ki18n_wrap_ui(kritablurfilter_SOURCES
     wdg_gaussian_blur.ui
     wdg_motion_blur.ui
     wdg_lens_blur.ui
+    wdg_depth_blur.ui
     )
 
 kis_add_library(kritablurfilter MODULE ${kritablurfilter_SOURCES})
